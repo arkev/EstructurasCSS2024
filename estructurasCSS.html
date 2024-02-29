@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras CSS</title>
+    <!-- Aquí puedes enlazar tus archivos CSS si los tienes -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        /* Estilos CSS para tu página */
+       body{
+        background: #6100a2;
+        margin: 0;
+        padding: 0;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 16px;
+        box-sizing: border-box;
+       } 
+       nav{
+        background:crimson;
+       }
+       header{
+        background: darkorange;
+       }
+       .seccion{
+        background:deeppink;
+       }
+       footer{
+        background: purple;
+       }
+       a{
+        color:whitesmoke;
+       }
+       li{
+        text-align: left;
+       }
+       header, .seccion, footer, nav {
+            padding:1em;
+        }
+       @media screen and (min-width: 600px){
+        /*Aqui inician los estilos de tablet*/
+        nav{
+            float: left;
+            width: 20%;
+            height: 600px;
+        }
+        header, .seccion, footer {
+            height: 200px;
+        }
+        footer{
+            clear: left;
+        }
+        /*Aqui terminan los estilos de tablet*/
+       }
+       @media screen and (min-width: 1024px){
+        /*Aqui inician los estilos de desktop*/
+        nav{
+        background:rgb(75, 23, 222);
+       }
+       header{
+        background: rgb(0, 55, 255);
+       }
+       .seccion{
+        background:rgb(20, 137, 255);
+       }
+       footer{
+        background: rgb(0, 119, 128);
+       }
+        /*Aqui terminan los estilos de desktop*/
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Encabezado de la Página</h1>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <section>
+            <section class="seccion">
+                <h2>Sección 1</h2>
+                <p>Contenido de la primera sección.</p>
+            </section>
+    
+            <section class="seccion">
+                <h2>Sección 2</h2>
+                <p>Contenido de la segunda sección.</p>
+            </section>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>Pie de página - © 2024 Tu Sitio Web</p>
+    </footer>
+</body>
+</html>
